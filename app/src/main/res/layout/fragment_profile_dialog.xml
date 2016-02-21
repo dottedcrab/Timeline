@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="@dimen/thumbnail_width"
+        android:layout_height="@dimen/thumbnail_width"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white"
+        android:contentDescription="@string/content_desc_profile_image"
+        android:padding="@dimen/border_width" />
+
+    <TextView
+        android:id="@+id/tv_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_user"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/iv_user"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_handle"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/iv_user"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
+

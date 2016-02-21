@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="@dimen/thumbnail_width"
+                android:layout_height="@dimen/thumbnail_width"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:background="@android:color/white"
+                android:contentDescription="@string/content_desc_profile_image"
+                android:padding="@dimen/border_width" />
+
+            <TextView
+                android:id="@+id/tv_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_user"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toRightOf="@id/iv_user"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_handle"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toRightOf="@id/iv_user"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBgStrip"
+            android:padding="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/tv_dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_time_24dp"
+                android:drawablePadding="@dimen/padding_small"
+                android:gravity="center_vertical"
+                android:maxLength="6"
+                android:paddingLeft="@dimen/padding_small" />
+
+            <TextView
+                android:id="@+id/tv_retweet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_retweet_24dp"
+                android:drawablePadding="@dimen/padding_small"
+                android:gravity="center_vertical"
+                android:maxLength="3" />
+
+            <TextView
+                android:id="@+id/tv_favourites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_fav_24dp"
+                android:drawablePadding="@dimen/padding_small"
+                android:gravity="center_vertical"
+                android:maxLength="3"
+                android:paddingRight="@dimen/padding_small" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_width"
+            android:background="@color/colorImageFrame" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/tv_tweetText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_articleUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:autoLink="web" />
+
+            <ImageView
+                android:id="@+id/iv_media"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_desc_article_image" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

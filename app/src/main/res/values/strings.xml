@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TimeLine</string>
+
+    <string name="menu_user">Profile</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_share">Share</string>
+
+    <string name="screen_tweet">Tweet</string>
+
+    <string name="content_desc_profile_image">Profile Image</string>
+    <string name="content_desc_article_image">Article Image</string>
+    <string name="content_desc_image_indicator">Image indicator</string>
+
+    <string name="sn_prefix">\u0040%1$s</string>
+
+    <string name="err_profile_empty">Profile info is not available</string>
+    <string name="err_network_failure">No network connectivity</string>
+</resources>
